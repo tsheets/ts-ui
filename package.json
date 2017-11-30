@@ -1,0 +1,53 @@
+{
+  "name": "ts-ui",
+  "version": "1.0.0",
+  "description": "A ui-library for creating applications consistent with the TSheets style guidelines.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --cache && echo \"eslint: no lint errors\"",
+    "prettier": "find . -name \"*.js\" | grep -v -f .eslintignore | xargs prettier --write",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsheets/ts-ui.git"
+  },
+  "keywords": [
+    "material design",
+    "material-ui",
+    "react",
+    "react-component",
+    "theme",
+    "tsheets"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tsheets/tear-ui/issues"
+  },
+  "homepage": "https://github.com/tsheets/ts-ui#readme",
+  "devDependencies": {
+    "@storybook/react": "^3.2.17",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^21.2.1",
+    "prettier": "^1.9.1"
+  },
+  "dependencies": {
+    "material-ui": "^1.0.0-beta.22",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
