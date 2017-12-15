@@ -1,4 +1,20 @@
 {
-  "presets": [ "stage-1", "react"],
-  "plugins": [ ]
+  "presets": [ "env", "stage-1", "react" ],
+  "plugins": [
+    "transform-object-assign"
+  ],
+  "env": {
+    "development": {
+      "sourceMaps": "both",
+      "plugins": [
+      ]
+    },
+    "production": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-dev-warning",
+        "transform-runtime"
+      ]
+    }
+  }
 }
