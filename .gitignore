@@ -61,3 +61,6 @@ typings/
 
 # Ignore build assets
 build/
+
+# Ignore storybook static build output
+.out
